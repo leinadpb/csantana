@@ -1,8 +1,8 @@
 # CSANTANA
 
-#####_Carlos Santana's official blog._
+_Carlos Santana's official blog._
 
-####Things to cover:
+### Things to cover:
 ***
 * Home page
 * About page
