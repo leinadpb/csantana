@@ -1,0 +1,119 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway');
+
+$main_font_handwritten: 'Great Vibes', cursive;
+$text_font: 'Raleway', sans-serif;
+$site_background_color:#DADADA;
+$jumbotron_background_color:#e9ecef;
+$navbar_background_color:#343a40;
+
+body{
+  background-color: $site_background_color;
+}
+
+// Main menu
+
+// Jumbotron
+.jumbotron{
+  .title{
+    margin-top:0.4em;
+    font-family: $main_font_handwritten;
+    text-align: center;
+  }
+  .content{
+    font-family: $text_font;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .main-photo{
+    width:80px;
+    height:80px;
+    text-align: center;
+    border-radius: 100%;
+    margin-top:1.0em;
+  }
+}
+
+.box-categories{
+  margin-bottom:3.5em;
+}
+
+// Featured header
+.featured-header{
+  width:100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: $main_font_handwritten;
+  margin-bottom:0.8em;
+  margin-top:0.4em;
+}
+
+//Featured section
+.featured-section{
+  padding:0 2.0em;
+}
+//Featured article
+.featured-article{
+  padding:0.4em;
+  margin:0.4em;
+  color:white;
+  .title{
+    font-size: 1.45rem;
+    text-align: center;
+  }
+  .content{
+    font-size: 0.90rem;
+    text-align: center;
+  }
+}
+.featured-article-1{
+  @extend .featured-article;
+  background-image: url("lifestyle.jpg");
+  -moz-background-image: url("lifestyle.jpg");
+  -o-background-image: url("lifestyle.jpg");
+  -webkit-background-image: url("lifestyle.jpg");
+}
+.featured-article-2{
+  @extend .featured-article;
+  background-image: url("manswear.jpg");
+  -moz-background-image: url("manswear.jpg");
+  -o-background-image: url("manswear.jpg");
+  -webkit-background-image: url("manswear.jpg");
+}
+.featured-article-3{
+  @extend .featured-article;
+  background-image: url("travel-bag.jpg");
+  -moz-background-image: url("travel-bag.jpg");
+  -o-background-image: url("travel-bag.jpg");
+  -webkit-background-image: url("travel-bag.jpg");
+}
+//Side menu
+.side-menu{
+  width: 100%;
+  height:auto;
+  background-color: $jumbotron_background_color;
+  padding: 1.3em 1.6em;
+  margin: 0.6em auto;
+  h1{
+    text-align: center;
+    color:$navbar_background_color;
+    font-size:1.3rem;
+  }
+}
+//Footer
+.footer{
+  .bottom-footer{
+    margin-top:1.2em;
+    width:100%;
+    padding:0.8em;
+    background-color: $navbar_background_color;
+    p{
+      text-align: center;
+      color:$site_background_color;
+    }
+  }
+}
