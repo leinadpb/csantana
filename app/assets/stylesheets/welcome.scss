@@ -16,7 +16,80 @@ body{
 }
 
 // Main menu
+.original-color{
+  background-color:$navbar_background_color;
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition:0.2s;
+  -webkit-transition: 2s;
+  .nav-link{
+    color:#999999;
+    transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition:0.1s;
+    -webkit-transition: 0.1s;
+  }
+  .nav-link:hover{
+    color:white;
+  }
+  .navbar-brand{
+    color:whitesmoke;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition:0.2s;
+    -webkit-transition: 0.2s;
+  }
+  .social-icons-box{
+    padding-right:3.9em;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition:0.4s;
+    -webkit-transition: 0.4s;
+    .social-icon{
+      position:relative;
+      margin-left:0.5em;
+      margin-right:0.5em;
+      color:$jumbotron_background_color;
+    }
 
+    .social-icon i:hover{
+      color:white;
+    }
+    .social-icon:active{
+      top:5px;
+    }
+  }
+}
+.other-color{
+  background-color: white;
+  color:$navbar_background_color;
+  box-shadow: black 0 0 3px;
+  .nav-link{
+    color:$navbar_background_color;
+  }
+  .navbar-brand{
+    color:black;
+  }
+  .social-icons-box{
+    padding-right:3.9em;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition:0.4s;
+    -webkit-transition: 4s;
+    .social-icon{
+      position:relative;
+      margin-left:0.5em;
+      margin-right:0.5em;
+      color:$navbar_background_color;
+    }
+    .social-icon i:hover{
+      color:$jumbotron_background_color;
+    }
+    .social-icon:active{
+      top:5px;
+    }
+  }
+}
 // Jumbotron
 .jumbotron{
   .title{
@@ -39,7 +112,13 @@ body{
 }
 
 .box-categories{
-  margin-bottom:3.5em;
+
+  @media screen and (max-width:768px){
+    margin-bottom: 1.95em;
+  }
+  @media screen and (min-width:768px){
+    margin-bottom:3.5em;
+  }
 }
 
 // Featured header
@@ -59,7 +138,8 @@ body{
 //Featured article
 .featured-article{
   padding:0.4em;
-  margin:0.4em;
+  margin-left:0.2em;
+  margin-right:0.2em;
   color:white;
   .title{
     font-size: 1.45rem;
