@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20180319201503) do
     t.integer "author_id", null: false
     t.boolean "featured", default: false
     t.string "photo_path", null: false
+    t.integer "views", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -21,8 +21,8 @@ _Carlos Santana's official blog._
 * [ ] Add admin panel (to add, remove and edit articles and categories).
 * [ ] Add functionality to add another admin in admin panel.
 ***
-* [ ] Main menu
-* [ ] Footer
+* [x] Main menu
+* [x] Footer
 ***
 * [ ] Add database provider (MySQL)
 * [ ] Deploy to heroku

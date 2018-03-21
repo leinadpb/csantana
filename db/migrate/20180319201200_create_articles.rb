@@ -7,6 +7,7 @@ class CreateArticles < ActiveRecord::Migration[5.1]
       t.integer :author_id, null:false
       t.boolean :featured, default:false
       t.string :photo_path, null:false
+      t.integer :views, default:0
       t.timestamps
     end
   end

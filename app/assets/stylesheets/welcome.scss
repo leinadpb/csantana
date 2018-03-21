@@ -22,6 +22,19 @@ body{
   -moz-transition: 0.2s;
   -o-transition:0.2s;
   -webkit-transition: 2s;
+  .navbar-toggler-icon{
+    font-size: 1.15rem;
+    line-height: 1;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5.0rem;
+    i{
+      color:$navbar_background_color;
+    }
+  }
+  .active{
+    color:white;
+  }
   .nav-link{
     color:#999999;
     transition: 0.1s;
@@ -60,11 +73,48 @@ body{
     }
   }
 }
+.card{
+
+  .card-top-wrapper > .box-hover{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 100;
+    top: 0;
+    visibility: hidden;
+    a{
+      width: 70%;
+      padding: 0.4em;
+      background-color: transparent;
+      border: 4px solid white;
+      text-align: center;
+      color: white;
+      margin: 0 auto;
+      text-decoration: none;
+      position: relative;
+      top: 40%;
+      left: 26%;
+    }
+    a:hover{
+      background-color: white;
+      color:black;
+    }
+  }
+  .card-top-wrapper:hover > .box-hover{
+    visibility: visible;
+  }
+}
 .other-color{
   background-color: white;
   color:$navbar_background_color;
   box-shadow: black 0 0 3px;
   .nav-link{
+    color:#999999;
+  }
+  .nav-link:hover{
     color:$navbar_background_color;
   }
   .navbar-brand{
@@ -75,7 +125,7 @@ body{
     transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition:0.4s;
-    -webkit-transition: 4s;
+    -webkit-transition: 0.4s;
     .social-icon{
       position:relative;
       margin-left:0.5em;
@@ -107,7 +157,12 @@ body{
     height:80px;
     text-align: center;
     border-radius: 100%;
-    margin-top:1.0em;
+    @media screen and (max-width:768px){
+      margin-top:2.5em;
+    }
+    @media screen and (min-width:768px){
+      margin-top:1.0em;
+    }
   }
 }
 
@@ -136,6 +191,7 @@ body{
   padding:0 2.0em;
 }
 //Featured article
+$anim_time_featured_category: 0.5s;
 .featured-article{
   padding:0.4em;
   margin-left:0.2em;
@@ -144,10 +200,24 @@ body{
   .title{
     font-size: 1.45rem;
     text-align: center;
+    transition: $anim_time_featured_category;
+    -moz-transition: $anim_time_featured_category;
+    -o-transition:$anim_time_featured_category;
+    -webkit-transition: $anim_time_featured_category;
   }
   .content{
     font-size: 0.90rem;
     text-align: center;
+    transition: $anim_time_featured_category;
+    -moz-transition: $anim_time_featured_category;
+    -o-transition:$anim_time_featured_category;
+    -webkit-transition: $anim_time_featured_category;
+  }
+}
+.featured-article:hover{
+  cursor: pointer;
+  .title{
+    font-size: 1.55rem;
   }
 }
 .featured-article-1{
